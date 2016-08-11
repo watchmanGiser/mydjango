@@ -1,6 +1,6 @@
 from django.conf.urls import include,url,patterns
 from django.contrib import admin
-from blog.views import hello
+from blog.views import hello,fuc_welc
 
 
 
@@ -11,5 +11,6 @@ urlpatterns = [
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^hello/',hello),
+    url(r'^$',fuc_welc),
 
 ]
